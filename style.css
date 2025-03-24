@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light Blue background for the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    background-color: #fff;  /* White background for the container */
+}
+
+h1 {
+    font-size: 24px;
+    color: #00796b;  /* Dark teal for title */
+}
+
+h2 {
+    font-size: 20px;
+    color: #004d40;  /* Darker shade of teal for subtitles */
+}
+
+.input-section, .goal-section, .history-section, .goal-progress-section {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00796b;
+    border-radius: 4px;
+    background-color: #f1f8e9; /* Light Green background for inputs */
+}
+
+button {
+    background-color: #00796b; /* Dark Teal button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;  /* Darker Teal on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f8ff; /* Light blue background for workout items */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #004d40;  /* Darker text for better readability */
+}
+
+.goal-section, .goal-progress-section {
+    background-color: #c8e6c9; /* Light Green background for goal sections */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.history-section {
+    background-color: #bbdefb; /* Light Blue background for history section */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#progress-steps, #progress-calories {
+    font-size: 16px;
+    color: #00796b;  /* Dark Teal for progress text */
+    margin-top: 10px;
+}
+
+/* Add a slight shadow to buttons and inputs */
+input:focus, select:focus, button:focus {
+    box-shadow: 0 0 10px rgba(0, 150, 136, 0.5);
+}

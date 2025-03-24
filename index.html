@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+
+        <div class="goal-section">
+            <h2>Set Your Fitness Goal</h2>
+            <label for="goal-steps">Steps Goal:</label>
+            <input type="number" id="goal-steps" placeholder="Enter steps goal">
+            <label for="goal-calories">Calories Goal:</label>
+            <input type="number" id="goal-calories" placeholder="Enter calories goal">
+            <button id="save-goal-btn">Set Goal</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Record Your Workout</h2>
+            <label for="exercise-type">Exercise Type:</label>
+            <select id="exercise-type">
+                <option value="Running">Running</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Walking">Walking</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Strength Training">Strength Training</option>
+            </select>
+
+            <label for="exercise-time">Time (in minutes):</label>
+            <input type="number" id="exercise-time" placeholder="Enter time in minutes">
+
+            <label for="steps">Steps:</label>
+            <input type="number" id="steps" placeholder="Enter steps">
+
+            <label for="calories">Calories Burned:</label>
+            <input type="number" id="calories" placeholder="Enter calories burned">
+
+            <button id="save-workout-btn">Save Workout</button>
+        </div>
+
+        <div class="history-section">
+            <h2>Your Workout History</h2>
+            <ul id="workout-history-list"></ul>
+        </div>
+
+        <div class="goal-progress-section">
+            <h2>Your Fitness Progress</h2>
+            <p id="progress-steps"></p>
+            <p id="progress-calories"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
